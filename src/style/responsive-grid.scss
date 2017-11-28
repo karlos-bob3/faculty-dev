@@ -1,0 +1,214 @@
+// Переменные с цветами
+//$dark-blue: #002147;
+$dark-blue: #00356b;
+$light-blue: #3277ae;
+$sky-blue: #00B7FE;
+$main-brown: #222;
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .carousel-info {
+    height: 290px!important;
+  }
+  .footer-wrap .map-footer {
+    iframe {
+      margin-bottom: 10px;
+    }
+    p.address {
+      text-align: center!important;
+      padding: 0!important;
+    }
+  }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 0;
+  }
+  header #search-form {
+    display: none;
+    margin: 0 5px;
+  }
+  header .topbar {
+    display: none;
+  }
+  header .lowbar {
+    padding-bottom: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+    .logo-header {
+      margin-left: 15px;
+      a.rtsla_logo img {
+        max-width: 117px!important;
+      }
+    }
+  .navbar-collapse.in {
+     overflow-y: inherit;
+  }
+    #menu {
+      //margin-top: 30px;
+      background-color: none;
+      padding: 10px 15px;
+      width: 100%;
+      background-color: #fff;
+      float: right;
+      #search-form-mobile {
+        display: block;
+        padding: 0;
+        border: none;
+        button {
+           top: 20px;
+           right: 7px;
+         }
+      }
+      //#search-form-collapse {
+      //  display: block;
+      //}
+      nav.navbar {
+        background-color: #fff;
+        .button-container {
+          position: absolute;
+          top: -64px;
+          right: 0;
+          button {
+            margin-left: 15px;
+            width: 46px;
+            height: 44px;
+            //padding: 15px 10px;
+            display: inline-block;
+            background-color: orangered;
+          }
+          button.navbar-toggle-search {
+            background-color: #fff;
+            color: $dark-blue;
+            border: 1px solid $dark-blue;
+          }
+          button.navbar-toggle-menu {
+            background-color: $dark-blue;
+            text-align: center;
+            span.icon-bar {
+              margin-left: 4px;
+              background-color: #fff;
+              height: 2px;
+            }
+          }
+        }
+
+        ul.nav {
+          margin: 10px 0 0 0;
+          li {
+            padding: 3px 0;
+            //border-bottom: 1px solid $dark-blue;
+          }
+          li.dropdown {
+            box-shadow: none;
+            div.dropdown-menu {
+              padding: 0 10px;
+              box-shadow: none;
+              width: 100%;
+              border-left: 0;
+              a {
+                font-size: 1.2rem;
+                overflow-wrap: break-word;
+              }
+            }
+          }
+          li.open {
+            &:after {
+              content: none;
+            }
+          }
+          #search-form-mobile {
+            border: none;
+            button.btn {
+              top: 30px;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+  section.slider  {
+    display: none;
+  }
+  .inner-wrapper section.slider .owl-nav {
+    display: none !important; }
+  .inner-wrapper section.slider .owl-dots .owl-dot span {
+    height: 20px !important;
+    width: 20px !important; }
+    .inner-wrapper section.slider .slider-item .carousel-info table {
+      font-size: 0.96rem !important; }
+  .inner-wrapper section.slider .slider-item .img-side {
+    position: relative; }
+    .inner-wrapper section.slider .slider-item .img-side a img {
+      width: 100%;
+      height: 280px !important; }
+  .inner-wrapper section.news .news-item {
+    padding-top: 15px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+    .inner-wrapper section.news .news-item a.news-teaser img.img-fluid {
+      max-width: 100%;
+      height: auto !important;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .footer-wrap .map-footer {
+    display: block;
+    iframe {
+      margin-bottom: 10px;
+    }
+    p.address {
+      text-align: center!important;
+      padding: 0!important;
+    }
+  }
+}
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 320px) {
+  .footer-search {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ .search-row-tablet {
+   margin-top: -113px;
+ }
+  #menu {
+    float: none;
+  }
+  ul.nav {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .footer-search {
+    display: none;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .search-row-tablet {
+    margin-top: 0;
+  }
+  .footer-search {
+    display: block;
+  }
+}
+/* Large Devices, Wide Screens */

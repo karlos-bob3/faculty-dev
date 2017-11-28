@@ -1,0 +1,61 @@
+// Переменные с цветами
+//$dark-blue: #002147;
+
+#breadcrumbs-main .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+section.employees-list {
+  .employees-list-item {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    &:first-child {
+      //border-top: none;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .employees-photo {
+      position: relative;
+      img {
+        display: block;
+        width: 202px;
+        height: 245px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .employees-info {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .emp-post {
+        color: #3277ae;
+        font-size: .875rem;
+        line-height: 1.21428571;
+        font-family: TheSans,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+      }
+      h3.emp-name {
+        font-size: 2.3rem;
+        color: #00356B;
+        margin-top: 8px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
